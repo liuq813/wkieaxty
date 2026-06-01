@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>電動工具の匠 — プロ・DIY向け電動工具専門店</title>
+<meta name="description" content="高品質な電動工具をリーズナブルな価格で。業務用からDIYまで、充実の品揃え。11,000円以上送料無料・正午まで即日発送。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="top-bar">
+  <div class="top-bar-inner">
+    <span>🎯 11,000円以上で<span class="top-bar-em">送料無料</span></span>
+    <span class="top-bar-divider">|</span>
+    <span>⏰ 正午までのご注文で<span class="top-bar-em">即日発送</span></span>
+  </div>
+</div>
+
+<header class="header" id="header">
+  <div class="header-inner">
+    <a href="#" class="logo">
+      <span class="logo-icon">⚡</span>
+      <span class="logo-text">電動工具の<span class="logo-accent">匠</span></span>
+    </a>
+    <div class="header-right">
+      <button class="header-icon" aria-label="検索" id="searchBtn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+      <button class="header-icon sp-hide" aria-label="お気に入り"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+      <button class="header-icon sp-hide" aria-label="マイページ"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></button>
+      <button class="header-icon cart-btn" id="cartBtn" aria-label="カートを見る"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#products" class="nav-link active" data-cat="all">すべて</a>
+    <a href="#products" class="nav-link" data-cat="drill">電動ドリル</a>
+    <a href="#products" class="nav-link" data-cat="saw">切断機</a>
+    <a href="#products" class="nav-link" data-cat="grinder">グラインダー</a>
+    <a href="#products" class="nav-link" data-cat="sander">サンダー</a>
+    <a href="#products" class="nav-link" data-cat="outdoor">アウトドア</a>
+  </div>
+</nav>
+
+<div class="banner">
+  <div class="banner-slide">
+    <div class="banner-content">
+      <p class="banner-tag">🔥 期間限定キャンペーン</p>
+      <h2 class="banner-title">全品<span class="banner-accent">送料無料</span></h2>
+      <p class="banner-desc">11,000円以上のご注文で送料無料！<br>正午までにご注文いただいた商品は当日発送いたします。</p>
+      <a href="#products" class="banner-btn">商品を見る →</a>
+    </div>
+  </div>
+</div>
+
+<section class="products" id="products">
+  <div class="section-header">
+    <h2 class="section-title">人気の<span class="accent">商品</span></h2>
+    <p class="section-desc">厳選した電動工具を取り揃えています。すべて税込表示です。</p>
+  </div>
+  <div class="product-grid" id="productGrid"></div>
+</section>
+
+<section class="services" id="services">
+  <div class="section-header">
+    <h2 class="section-title">匠の<span class="accent">サービス</span></h2>
+  </div>
+  <div class="services-grid">
+    <div class="service-item"><span class="service-icon">🚚</span><strong>送料無料</strong><span>11,000円以上で無料</span></div>
+    <div class="service-item"><span class="service-icon">📦</span><strong>即日発送</strong><span>正午までのご注文</span></div>
+    <div class="service-item"><span class="service-icon">🛡️</span><strong>1年保証</strong><span>全商品にメーカー保証</span></div>
+    <div class="service-item"><span class="service-icon">🔧</span><strong>部品充実</strong><span>交換部品取り扱い</span></div>
+    <div class="service-item"><span class="service-icon">💬</span><strong>専門サポート</strong><span>経験豊富なスタッフ</span></div>
+    <div class="service-item"><span class="service-icon">📄</span><strong>取扱説明書</strong><span>WEBで閲覧可能</span></div>
+    <div class="service-item"><span class="service-icon">📅</span><strong>土日配送</strong><span>休まず発送対応</span></div>
+    <div class="service-item"><span class="service-icon">🎁</span><strong>2年保証</strong><span>プレミアム会員様</span></div>
+    <div class="service-item"><span class="service-icon">✉️</span><strong>24h受付</strong><span>メールはいつでも</span></div>
+  </div>
+</section>
+
+<section class="newsletter">
+  <div class="newsletter-inner">
+    <div class="newsletter-content">
+      <h2>SNS / メルマガ</h2>
+      <p>最新情報やセール・新商品などお得な情報を配信中！</p>
+      <div class="newsletter-icons">
+        <a href="#" class="sns-icon" aria-label="LINE">💬</a>
+        <a href="#" class="sns-icon" aria-label="Instagram">📸</a>
+        <a href="#" class="sns-icon" aria-label="Twitter">🐦</a>
+        <a href="#" class="sns-icon" aria-label="Facebook">👍</a>
+        <a href="#" class="sns-icon" aria-label="YouTube">▶️</a>
+      </div>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" placeholder="メールアドレスを入力" required>
+        <button type="submit">登録する</button>
+      </form>
+      <p class="newsletter-coupon">🎫 メルマガ登録で <strong>500円クーポン</strong> プレゼント！</p>
+    </div>
+    <div class="newsletter-qr">
+      <div class="qr-placeholder"><span>LINE</span><span>🔲</span><span>友だち追加</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="about-inner">
+    <div class="about-content">
+      <h2 class="section-title">電動工具の<span class="accent">匠</span>について</h2>
+      <p>私たちは2015年の創業以来、現場で本当に使える電動工具を厳選し、職人やDIY愛好家の皆さまにお届けしてきました。</p>
+      <p>単なる販売ではなく、お客様一人ひとりの作業環境やスキルレベルに合わせた最適な工具選びをサポートすることこそが、私たちの使命です。</p>
+      <div class="about-stats">
+        <div class="about-stat"><strong>2015</strong><span>創業</span></div>
+        <div class="about-stat"><strong>15,000+</strong><span>販売個数</span></div>
+        <div class="about-stat"><strong>3,500+</strong><span>取引先</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="section-header">
+    <h2 class="section-title">お問い合わせ</h2>
+    <p class="section-desc">製品についてのご質問・ご不明点はお気軽にどうぞ。</p>
+  </div>
+  <form class="contact-form" id="contactForm">
+    <div class="form-row">
+      <div class="form-group"><label for="name">お名前 <span class="required">*</span></label><input type="text" id="name" required placeholder="例：山田 太郎"></div>
+      <div class="form-group"><label for="email">メールアドレス <span class="required">*</span></label><input type="email" id="email" required placeholder="example@mail.com"></div>
+    </div>
+    <div class="form-group"><label for="subject">件名</label><input type="text" id="subject" placeholder="例：製品についての質問"></div>
+    <div class="form-group"><label for="message">お問い合わせ内容 <span class="required">*</span></label><textarea id="message" required rows="5" placeholder="お問い合わせ内容をご記入ください"></textarea></div>
+    <button type="submit" class="btn btn-primary btn-full">送信する</button>
+  </form>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a href="#" class="logo"><span class="logo-icon">⚡</span><span class="logo-text">電動工具の<span class="logo-accent">匠</span></span></a>
+        <p>プロの現場を支える信頼の工具専門店。</p>
+        <div class="footer-contact-info"><span>📧 info@denki-takumi.jp</span><span>📞 03-1234-5678</span></div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col"><h4>商品カテゴリ</h4><a href="#">電動ドリル</a><a href="#">切断機</a><a href="#">グラインダー</a><a href="#">サンダー</a><a href="#">アウトドア工具</a></div>
+        <div class="footer-col"><h4>サポート</h4><a href="#">よくある質問</a><a href="#">返品・交換</a><a href="#">配送について</a><a href="#">保証について</a><a href="#">お支払い方法</a></div>
+        <div class="footer-col"><h4>会社情報</h4><a href="#">会社概要</a><a href="#">採用情報</a><a href="#">プライバシーポリシー</a><a href="#">特定商取引法に基づく表記</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 電動工具の匠 All Rights Reserved.</p>
+    <a href="#" class="admin-link" id="adminLink">管理設定</a>
+  </div>
+</footer>
+
+<div class="cart-overlay" id="cartOverlay"></div>
+<div class="cart-drawer" id="cartDrawer">
+  <div class="cart-header"><h2>ショッピングカート</h2><button class="cart-close" id="cartClose" aria-label="閉じる"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button></div>
+  <div class="cart-body" id="cartBody">
+    <div class="cart-empty" id="cartEmpty"><span class="cart-empty-icon">🛒</span><p>カートに商品がありません</p></div>
+    <div class="cart-items" id="cartItems"></div>
+  </div>
+  <div class="cart-footer" id="cartFooter">
+    <div class="cart-summary" id="cartSummary"><div class="cart-total"><span>小計</span><span>¥0</span></div></div>
+    <button class="btn btn-primary btn-full" id="checkoutBtn">レジに進む</button>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modalOverlay"></div>
+<div class="modal" id="checkoutModal">
+  <div class="modal-header"><h2>ご注文内容の確認</h2><button class="modal-close" id="modalClose"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button></div>
+  <div class="modal-body">
+    <div class="checkout-summary" id="checkoutSummary"></div>
+    <form id="checkoutForm">
+      <h3>お客様情報</h3>
+      <div class="form-row">
+        <div class="form-group"><label for="checkoutName">お名前 <span class="required">*</span></label><input type="text" id="checkoutName" required placeholder="山田 太郎"></div>
+        <div class="form-group"><label for="checkoutEmail">メールアドレス <span class="required">*</span></label><input type="email" id="checkoutEmail" required placeholder="example@mail.com"></div>
+      </div>
+      <div class="form-group"><label for="checkoutAddress">配送先住所 <span class="required">*</span></label><input type="text" id="checkoutAddress" required placeholder="東京都新宿区西新宿2-8-1"></div>
+      <div class="form-group"><label for="checkoutPhone">電話番号 <span class="required">*</span></label><input type="tel" id="checkoutPhone" required placeholder="090-1234-5678"></div>
+      <h3 style="margin-top:8px;">お支払い方法</h3>
+      <div class="payment-wrapper" id="paymentWrapper">
+        <div class="payment-methods" id="paymentMethods"></div>
+        <div class="payment-detail" id="paymentDetail"></div>
+      </div>
+      <button type="submit" class="btn btn-primary btn-full">注文を確定する</button>
+    </form>
+  </div>
+</div>
+
+<div class="modal-overlay" id="pwdOverlay"></div>
+<div class="modal" id="pwdModal">
+  <div class="modal-header"><h2>🔐 認証</h2></div>
+  <div class="modal-body">
+    <form id="pwdForm">
+      <div class="form-group">
+        <label for="pwdInput">管理者パスワード</label>
+        <input type="password" id="pwdInput" placeholder="パスワードを入力" autofocus>
+      </div>
+      <p class="pwd-error" id="pwdError"></p>
+      <button type="submit" class="btn btn-primary btn-full">ログイン</button>
+    </form>
+  </div>
+</div>
+
+<div class="modal-overlay" id="adminOverlay"></div>
+<div class="modal modal-lg" id="adminModal">
+  <div class="modal-header"><h2>管理設定</h2><button class="modal-close" id="adminClose"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button></div>
+  <div class="modal-body admin-body">
+    <div class="admin-tabs">
+      <button class="admin-tab active" data-tab="store">店舗設定</button>
+      <button class="admin-tab" data-tab="shipping">配送設定</button>
+      <button class="admin-tab" data-tab="payment">支払い設定</button>
+      <button class="admin-tab" data-tab="products">商品管理</button>
+    </div>
+    <div class="admin-panel" id="adminStore">
+      <div class="form-group"><label for="adminStoreName">店舗名</label><input type="text" id="adminStoreName" value="電動工具の匠"></div>
+      <div class="form-group"><label for="adminEmail">メールアドレス</label><input type="email" id="adminEmail" value="info@denki-takumi.jp"></div>
+      <div class="form-group"><label for="adminPhone">電話番号</label><input type="tel" id="adminPhone" value="03-1234-5678"></div>
+      <div class="form-group" style="margin-top:6px;">
+        <label for="adminNewPwd">新しい管理者パスワード</label>
+        <input type="password" id="adminNewPwd" placeholder="空白のまま変更しません">
+      </div>
+    </div>
+    <div class="admin-panel hidden" id="adminShipping">
+      <div class="form-group"><label for="adminShippingFee">送料 (円)</label><input type="number" id="adminShippingFee" value="800" min="0"></div>
+      <div class="form-group"><label for="adminFreeShipping">送料無料になる合計金額 (円)</label><input type="number" id="adminFreeShipping" value="10000" min="0"></div>
+    </div>
+    <div class="admin-panel hidden" id="adminPayment"></div>
+    <div class="admin-panel hidden" id="adminProducts"></div>
+
+    <div class="admin-actions"><button class="btn btn-primary" id="adminSaveBtn">設定を保存</button><span class="admin-saved" id="adminSaved">&#10003; 保存しました</span></div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="detailOverlay"></div>
+<div class="modal modal-lg" id="detailModal">
+  <div class="modal-header"><h2 id="detailTitle">商品詳細</h2><button class="modal-close" id="detailClose"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button></div>
+  <div class="modal-body" id="detailBody"></div>
+</div>
+
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
